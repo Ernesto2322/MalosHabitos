@@ -1,12 +1,15 @@
 def calcular(a, b, c):
-    res = a * b + c
-    return res
+    return a * b + c
+
 
 def principal():
-    x = 5
-    y = 3
-    z = 7
-    resultado = calcular(x, y, z)
-    print("El resultado es:", resultado)
+    x = int(input("Introduce el valor de x: "))
+    y = int(input("Introduce el valor de y: "))
+    z = int(input("Introduce el valor de z: "))
 
-principal()
+    resultado = calcular(x, y, z)
+    print(f"El resultado es: {resultado}")
+
+
+if __name__ == "__main__":
+    principal()
